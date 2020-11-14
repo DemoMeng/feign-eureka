@@ -14,10 +14,16 @@
             1、需要开启Eureka Client配置，需要把服务注册到eureka中
         feign-eureka: 服务注册中心
             1、需要开Eureka Server配置
+        feign-eureka-gateway: 网关
+            1、需要注册到eureka
+            2、配置网关请求过滤路由
+            3、所有请求均请求该网关
             
 ![eureka注册中心信息](images/eureka注册中心.jpg)
 
 ![调用成功](images/feign调用成功.jpg)
+
+![网关调用成功](images/网关调用成功.jpg)
             
 
 
