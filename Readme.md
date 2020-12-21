@@ -19,6 +19,10 @@
             2、配置网关请求过滤路由
             3、所有请求均请求该网关
             
+        feign-config-server: 配置中心
+            1、需要注册到eureka
+            2、读取本地配置中心
+            
 ![eureka注册中心信息](images/eureka注册中心.jpg)
 
 ![调用成功](images/feign调用成功.jpg)
