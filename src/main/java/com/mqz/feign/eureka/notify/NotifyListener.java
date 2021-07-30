@@ -26,7 +26,7 @@ public class NotifyListener {
      */
     @EventListener
     public void listenDown(EurekaInstanceCanceledEvent event){
-            // 发送邮件
+        // TODO 发送邮件，短信，钉钉通知
         logger.info(MarkerFactory.getMarker("DOWN")+"服务ID：" + event.getServerId() + "\t" +
                 "服务实例：" + event.getAppName() + "\t服务下线");
         logger.info(event.getServerId() + "\t" + event.getAppName() + "服务下线");
@@ -38,6 +38,7 @@ public class NotifyListener {
      */
     @EventListener
     public void listenDown(EurekaInstanceRegisteredEvent event){
+        // TODO 发送邮件，短信，钉钉通知
         InstanceInfo instanceInfo = event.getInstanceInfo();
         logger.info(MarkerFactory.getMarker("DOWN"),instanceInfo.getAppName() + "服务注册");
     }
